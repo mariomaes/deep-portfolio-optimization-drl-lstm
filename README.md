@@ -10,7 +10,7 @@ Se analiza una cartera diversificada geográfica y sectorialmente compuesta por 
 
 ## 🧠 Metodologías Implementadas
 1. **Modelo Media-Varianza de Markowitz (`R` - `fPortfolio`):** Construcción de la frontera eficiente bajo restricción *Long-Only* y selección de la Cartera Tangente maximizando el Ratio de Sharpe sobre la Línea del Mercado de Capitales (usando el bono estadounidense a 10 años `GS10` como tasa libre de riesgo).
-2. **Deep Reinforcement Learning (`Python` - `PyTorch`, `OpenAI Gym`, `TA-Lib`):** Diseño de un entorno continuo personalizado (`PortfolioEnv`) cuyo espacio de estados integra indicadores técnicos normalizados (`RSI`, `MACD`, `ADX`). Entrenamiento de un agente Actor-Critic mediante **Proximal Policy Optimization (PPO)** y **Generalized Advantage Estimation (GAE-$\lambda$)** para maximizar el log-retorno acumulado.
+2. **Deep Reinforcement Learning (`Python` - `PyTorch`, `OpenAI Gym`, `TA-Lib`):** Diseño de un entorno continuo personalizado (`PortfolioEnv`) cuyo espacio de estados integra indicadores técnicos normalizados (`RSI`, `MACD`, `ADX`). Entrenamiento de un agente Actor-Critic mediante **Proximal Policy Optimization (PPO)** y **Generalized Advantage Estimation (GAE)** para maximizar el log-retorno acumulado.
 3. **Predicción Secuencial con Bi-LSTM (`Python` - `TensorFlow/Keras`, `Scikit-learn`):** Entrenamiento de redes *Bidirectional LSTM* independientes por activo (ventanas deslizantes de `lookback = 120` días) con esquema predictivo autorregresivo en el conjunto de test y asignación de pesos mediante transformación *softmax* suavizada ($\alpha = 1.3$).
 
 ## 📈 Resultados Fuera de Muestra (2023 – 2024)
